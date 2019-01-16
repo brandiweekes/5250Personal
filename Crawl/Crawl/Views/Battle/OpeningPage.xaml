@@ -23,7 +23,7 @@
         </StackLayout>
 
         <StackLayout>
-            <Label Text="Battle Begins Here for Brandi"
+            <Label Text="Battle Begins Here for Brandi test"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
