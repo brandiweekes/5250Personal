@@ -101,8 +101,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Characters\CharacterNewPage.xaml.cs">
       <DependentUpon>CharacterNewPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CorgiPage.xaml.cs">
-      <DependentUpon>CorgiPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Items\ItemDeletePage.xaml.cs">
@@ -256,7 +256,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CorgiPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

@@ -15,27 +15,16 @@
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="Corgi">
+        <NavigationPage Title="Home">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:CorgiPage />
+                <views:HomePage />
             </x:Arguments>
         </NavigationPage>
-
-        <!--<NavigationPage Title="Home">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:OpeningPage />
-            </x:Arguments>
-        </NavigationPage>-->
 
 
         <!--<NavigationPage Title="Manage">

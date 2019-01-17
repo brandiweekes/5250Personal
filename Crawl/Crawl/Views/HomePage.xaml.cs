@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Crawl.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CorgiPage : ContentPage
+	public partial class HomePage : ContentPage
 	{
-		public CorgiPage ()
+		public HomePage ()
 		{
 			InitializeComponent ();
 		}
