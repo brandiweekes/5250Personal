@@ -27,14 +27,14 @@
             Orientation="Vertical">
 
                     <Image 
-                Source="d20.png" 
+                Source="corgi.png" 
                 VerticalOptions="Center" 
                 HeightRequest="150"
                 HorizontalOptions="Fill"/>
 
                     <Label 
                 FontSize="Large"
-                Text="Class Dungeon"
+                Text="CPSC 5250"
                 VerticalOptions="Center" 
                 HorizontalOptions="CenterAndExpand" />
 
@@ -46,7 +46,7 @@
 
                     <Label 
                 FontSize="Small"
-                Text="Mike Koenig"
+                Text="Brandi Weekes"
                 VerticalOptions="Center" 
                 HorizontalOptions="CenterAndExpand" />
 
