@@ -101,6 +101,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Characters\CharacterNewPage.xaml.cs">
       <DependentUpon>CharacterNewPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CorgiPage.xaml.cs">
+      <DependentUpon>CorgiPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Items\ItemDeletePage.xaml.cs">
       <DependentUpon>ItemDeletePage.xaml</DependentUpon>
     </Compile>
@@ -249,6 +253,12 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Battle\AutoBattlePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CorgiPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <!--#if (CreateBackendProject)
