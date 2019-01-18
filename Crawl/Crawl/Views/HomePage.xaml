@@ -4,9 +4,44 @@
              x:Class="Crawl.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <StackLayout 
+            HorizontalOptions="Center" 
+            VerticalOptions="Start"
+            Orientation="Vertical">
+
+                <Image 
+                Source="tentacles_alien.png" 
+                VerticalOptions="Center" 
+                HeightRequest="150"
+                HorizontalOptions="Fill"/>
+
+                <Label 
+                FontSize="Large"
+                Text="MiBliens"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Intergalactic Battle Begins!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+                <Button Text="Aliens"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="CharactersButton_Command"/>
+
+                <Button Text="Agents"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="MonstersButton_Command"/>
+
+                <Button Text="Items"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="ItemsButton_Command"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
