@@ -31,5 +31,10 @@ namespace Crawl.Views
         {
             await Navigation.PushAsync(new ItemsPage());
         }
+
+        private async void ScoresButton_Command(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ScoresPage());
+        }
     }
 }

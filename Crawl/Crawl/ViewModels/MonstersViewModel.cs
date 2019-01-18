@@ -35,7 +35,7 @@ namespace Crawl.ViewModels
 
         public MonstersViewModel()
         {
-            Title = "Monster List";
+            Title = "Agent List";
             Dataset = new ObservableCollection<Monster>();
             LoadDataCommand = new Command(async () => await ExecuteLoadDataCommand());
 

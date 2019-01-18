@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Crawl.Views.HomePage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <StackLayout 
             HorizontalOptions="Center" 
@@ -41,7 +42,13 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" 
                     Clicked="ItemsButton_Command"/>
+                
+                <Button Text="History"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="ScoresButton_Command"/>
             </StackLayout>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
