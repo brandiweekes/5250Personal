@@ -26,7 +26,7 @@
                         <ViewCell>
 
                             <StackLayout Padding="10"
-                                         Orientation="Horizontal"
+                                         Orientation="Vertical"
                                          VerticalOptions="Start"
                                          HorizontalOptions="Start">
 
@@ -37,7 +37,10 @@
                                        VerticalOptions="Center"/>
 
 
-                                <StackLayout>
+                                <StackLayout Orientation="Vertical"
+                                             VerticalOptions="CenterAndExpand"
+                                             HorizontalOptions="CenterAndExpand">
+                                    
                                     <StackLayout Orientation="Horizontal">
                                         <Label Text="{Binding Name}" 
                                            LineBreakMode="NoWrap" 
@@ -53,7 +56,7 @@
                                            FontSize="16" />
                                     </StackLayout>
                                     <Label Text="{Binding Description}" 
-                                       LineBreakMode="NoWrap"
+                                       LineBreakMode="WordWrap"
                                        Style="{DynamicResource ListItemDetailTextStyle}"
                                        FontSize="13" />
                                 </StackLayout>
