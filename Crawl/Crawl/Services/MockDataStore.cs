@@ -50,6 +50,8 @@ namespace Crawl.Services
             _itemDataset.Add(new Item("Bunny Hat", "Pink hat with fluffy ears",
                 "http://www.clipartbest.com/cliparts/yik/e9k/yike9kMyT.png", 0, 10, -1, ItemLocationEnum.Head, AttributeEnum.Speed));
 
+            _itemDataset.Add(new Item("Shrink Ray", "Shrinking machine that shrinks user to proportional size",
+                "http://www.clipartbest.com/cliparts/9T4/o8X/9T4o8Xybc.png", 0, 10, -1, ItemLocationEnum.LeftFinger, AttributeEnum.Defense));
             // Implement Characters
 
             // Implement Monsters
