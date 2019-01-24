@@ -41,17 +41,31 @@ namespace Crawl.Services
             // Implement
 
             // Load Items.
-            _itemDataset.Add(new Item("Gold Sword", "Sword made of Gold, really expensive looking",
-                "http://www.clker.com/cliparts/e/L/A/m/I/c/sword-md.png", 0, 10, 10, ItemLocationEnum.PrimaryHand, AttributeEnum.Defense));
+            //_itemDataset.Add(new Item("Gold Sword", "Sword made of Gold, really expensive looking",
+            //    "http://www.clker.com/cliparts/e/L/A/m/I/c/sword-md.png", 0, 10, 10, ItemLocationEnum.PrimaryHand, AttributeEnum.Defense));
 
-            _itemDataset.Add(new Item("Strong Shield", "Enough to hide behind",
-                "http://www.clipartbest.com/cliparts/4T9/LaR/4T9LaReTE.png", 0, 10, 0, ItemLocationEnum.OffHand, AttributeEnum.Attack));
+            //_itemDataset.Add(new Item("Strong Shield", "Enough to hide behind",
+            //    "http://www.clipartbest.com/cliparts/4T9/LaR/4T9LaReTE.png", 0, 10, 0, ItemLocationEnum.OffHand, AttributeEnum.Attack));
 
-            _itemDataset.Add(new Item("Bunny Hat", "Pink hat with fluffy ears",
-                "http://www.clipartbest.com/cliparts/yik/e9k/yike9kMyT.png", 0, 10, -1, ItemLocationEnum.Head, AttributeEnum.Speed));
+            //_itemDataset.Add(new Item("Bunny Hat", "Pink hat with fluffy ears",
+            //    "http://www.clipartbest.com/cliparts/yik/e9k/yike9kMyT.png", 0, 10, -1, ItemLocationEnum.Head, AttributeEnum.Speed));
 
             _itemDataset.Add(new Item("Shrink Ray", "Shrinking machine that shrinks user to proportional size",
                 "http://www.clipartbest.com/cliparts/9T4/o8X/9T4o8Xybc.png", 0, 10, -1, ItemLocationEnum.LeftFinger, AttributeEnum.Defense));
+
+            _itemDataset.Add(new Item("Noisy Cricket", "Despite its small size, it launches a large orb of energy",
+                "https://www.pngrepo.com/download/125228/mechanical-drill-outline.png", 0, 10, 10, ItemLocationEnum.PrimaryHand, AttributeEnum.Attack));
+
+            _itemDataset.Add(new Item("Adorian Crossbow", "Fires shafts of plasma-charged energy up to fifty meters; powerful but with mediocre accuracy",
+                "http://www.freepngclipart.com/thumb/light/44954-energy-ball-effects-download-free-image-thumb.png", 3, 10, 10, ItemLocationEnum.OffHand, AttributeEnum.Attack));
+
+            _itemDataset.Add(new Item("Stealth Suit", "Capable of making its wearer invisible, be undetectable by both senses and radar, and emit no signatures",
+                "http://www.clipartbest.com/cliparts/9cp/L6e/9cpL6e5Ri.png", 0, 10, -3, ItemLocationEnum.Feet, AttributeEnum.Defense));
+
+            _itemDataset.Add(new Item("Quick Clone", "Used to form a distraction, extra hands, temporary field replacements, or a way to secretly escape",
+                "https://b14819fc8561370eb64a-1d1d43ab0f9b35bf2222c6a5c9f3ce1f.ssl.cf1.rackcdn.com/site_data/cbpreferred/editor_assets/businessmen-152572_1280.png", 0, 10, -3, ItemLocationEnum.Head, AttributeEnum.Defense));
+
+
             // Implement Characters
 
             // Implement Monsters
