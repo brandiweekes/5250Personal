@@ -28,7 +28,7 @@
 
             <StackLayout
                 Orientation="Horizontal"
-                HorizontalOptions="Start">
+                HorizontalOptions="Center">
                 <Label Text="Name : " 
                    FontSize="Medium" 
                    HorizontalOptions="Start"/>
@@ -38,7 +38,7 @@
             </StackLayout>
 
             <StackLayout
-                Orientation="Horizontal"
+                Orientation="Vertical"
                 HorizontalOptions="Start">
                 <Label Text="Description : " 
                    FontSize="Medium" 
