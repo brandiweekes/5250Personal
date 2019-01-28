@@ -6,7 +6,8 @@ namespace Crawl.Models
 {
     public enum MenuItemType
     {
-        Browse,
+        Home,
+        Items,
         Characters,
         About
     }
