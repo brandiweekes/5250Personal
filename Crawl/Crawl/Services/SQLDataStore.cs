@@ -129,6 +129,12 @@ namespace Crawl.Services
 
         #region Character
         // Character
+        public async Task<bool> InsertUpdateAsync_Character(Character data)
+        {
+            // Implement
+
+            return false;
+        }
 
         // Conver to BaseCharacter and then add it
         public async Task<bool> AddAsync_Character(Character data)

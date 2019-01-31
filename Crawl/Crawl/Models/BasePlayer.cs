@@ -17,6 +17,8 @@ namespace Crawl.Models
 
         public bool Alive { get; set; }
 
+        public int Age { get; set; }
+
         // The AttributeString will be unpacked and stored in the top level of Character as actual attributes, 
         // but it needs to go here as a string so it can be saved to the database.
         public string AttributeString { get; set; }

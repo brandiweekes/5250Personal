@@ -66,7 +66,8 @@ namespace Crawl.Services
                 "https://b14819fc8561370eb64a-1d1d43ab0f9b35bf2222c6a5c9f3ce1f.ssl.cf1.rackcdn.com/site_data/cbpreferred/editor_assets/businessmen-152572_1280.png", 0, 10, -3, ItemLocationEnum.Head, AttributeEnum.Defense));
 
 
-            // Implement Characters
+            // Load Characters
+            _characterDataset.Add(new Character());
 
             // Implement Monsters
 
@@ -88,10 +89,10 @@ namespace Crawl.Services
         private void NotifyViewModelsOfDataChange()
         {
             ItemsViewModel.Instance.SetNeedsRefresh(true);
+            CharactersViewModel.Instance.SetNeedsRefresh(true);
+            
             // Implement Monsters
-
-            // Implement Characters 
-
+            
             // Implement Scores
         }
 
@@ -175,34 +176,63 @@ namespace Crawl.Services
 
         #region Character
         // Character
+        public async Task<bool> InsertUpdateAsync_Character(Character data)
+        {
+
+            // Check to see if the item exist
+            var oldData = await GetAsync_Character(data.Id);
+            if (oldData == null)
+            {
+                _characterDataset.Add(data);
+                return true;
+            }
+
+            // Compare it, if different update in the DB
+            var UpdateResult = await UpdateAsync_Character(data);
+            if (UpdateResult)
+            {
+                await AddAsync_Character(data);
+                return true;
+            }
+
+            return false;
+        }
         public async Task<bool> AddAsync_Character(Character data)
         {
-            // Implement
-            return false;
+            _characterDataset.Add(data);
+
+            return await Task.FromResult(true);
         }
 
         public async Task<bool> UpdateAsync_Character(Character data)
         {
-            // Implement
-            return false;
+            var myData = _characterDataset.FirstOrDefault(arg => arg.Id == data.Id);
+            if (myData == null)
+            {
+                return false;
+            }
+
+            myData.Update(data);
+
+            return await Task.FromResult(true);
         }
 
         public async Task<bool> DeleteAsync_Character(Character data)
         {
-            // Implement
-            return false;
+            var myData = _characterDataset.FirstOrDefault(arg => arg.Id == data.Id);
+            _characterDataset.Remove(myData);
+
+            return await Task.FromResult(true);
         }
 
         public async Task<Character> GetAsync_Character(string id)
         {
-            // Implement
-            return null;
+            return await Task.FromResult(_characterDataset.FirstOrDefault(s => s.Id == id));
         }
 
         public async Task<IEnumerable<Character>> GetAllAsync_Character(bool forceRefresh = false)
         {
-            // Implement
-            return null;
+            return await Task.FromResult(_characterDataset);
         }
 
         #endregion Character

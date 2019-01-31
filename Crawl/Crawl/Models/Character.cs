@@ -16,6 +16,7 @@ namespace Crawl.Models
         {
             Attribute = new AttributeBase();
             Alive = true;
+            Age = 30;
         }
 
         // Create a new character, based on a passed in BaseCharacter
@@ -29,6 +30,7 @@ namespace Crawl.Models
             ExperienceTotal = newData.ExperienceTotal;
             ImageURI = newData.ImageURI;
             Alive = newData.Alive;
+            Age = newData.Age;
 
             // Database information
             Guid = newData.Guid;
@@ -51,13 +53,48 @@ namespace Crawl.Models
         // Create a new character, based on existing Character
         public Character(Character newData)
         {
-            // Implement
+            // Base information
+            Name = newData.Name;
+            Description = newData.Description;
+            Level = newData.Level;
+            ExperienceTotal = newData.ExperienceTotal;
+            ImageURI = newData.ImageURI;
+            Alive = newData.Alive;
+            Age = newData.Age;
+
+            // Database information
+            Guid = newData.Guid;
+            Id = newData.Id;
+
+            // Populate the Attributes
+            AttributeString = newData.AttributeString;
+            Attribute = new AttributeBase(newData.AttributeString);
+
+            // Set the strings for the items
+            Head = newData.Head;
+            Feet = newData.Feet;
+            Necklass = newData.Necklass;
+            RightFinger = newData.RightFinger;
+            LeftFinger = newData.LeftFinger;
+            Feet = newData.Feet;
         }
 
         // Upgrades to a set level
         public void ScaleLevel(int level)
         {
-            // Implement
+            var newValue = 1;
+
+            if (GameGlobals.ForceRollsToNotRandom)
+            {
+                newValue = level;
+            }
+            else
+            {
+                // Add value 1 to level passed in...
+                newValue = HelperEngine.RollDice(1, level);
+            }
+
+            Level = newValue;
         }
 
         // Update the character information
@@ -65,15 +102,52 @@ namespace Crawl.Models
         public void Update(Character newData)
         {
 
-            // Implement
+            if (newData == null)
+            {
                 return;
+            }
+
+            // Update all the fields in the Data, except for the Id and guid
+            // Base information
+            Name = newData.Name;
+            Description = newData.Description;
+            Level = newData.Level;
+            ExperienceTotal = newData.ExperienceTotal;
+            ImageURI = newData.ImageURI;
+            Alive = newData.Alive;
+            Age = newData.Age;
+
+            // Populate the Attributes
+            AttributeString = newData.AttributeString;
+            Attribute = new AttributeBase(newData.AttributeString);
+
+            // Set the strings for the items
+            Head = newData.Head;
+            Feet = newData.Feet;
+            Necklass = newData.Necklass;
+            RightFinger = newData.RightFinger;
+            LeftFinger = newData.LeftFinger;
+            Feet = newData.Feet;
         }
 
         // Helper to combine the attributes into a single line, to make it easier to display the item as a string
         public string FormatOutput()
         {
-            var myReturn = " Implement";
-            return myReturn;
+            var myReturn = Name + " , " +
+                            Age + " year old " +
+                            Description + " at Level" +
+                            Level + " with Experience Total" +
+                            ExperienceTotal + " is Alive: " +
+                            Alive + " " + " with " +
+                            Attribute.ToString() +
+                            "+" + Head + " , " +
+                            "+" + Feet + " , " +
+                            "+" + Necklass + " , " +
+                            "+" + RightFinger + " , " +
+                            "+" + LeftFinger + " , " +
+                            "+" + Feet;
+
+            return myReturn.Trim();
         }
 
         #region Basics
