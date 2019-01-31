@@ -40,7 +40,7 @@
                                 <StackLayout Orientation="Vertical"
                                              VerticalOptions="CenterAndExpand"
                                              HorizontalOptions="CenterAndExpand">
-                                    
+                                                                      
                                     <StackLayout Orientation="Horizontal">
                                         <Label Text="{Binding Name}" 
                                            LineBreakMode="NoWrap" 

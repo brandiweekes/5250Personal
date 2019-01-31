@@ -16,7 +16,8 @@ namespace Crawl.Models
         {
             Attribute = new AttributeBase();
             Alive = true;
-            Age = 30;
+            Age = 1;
+            ImageURI = "https://cdn3.iconfinder.com/data/icons/business-people-in-one-color/100/Corporate_Avatars_BW_19-01-512.png";
         }
 
         // Create a new character, based on a passed in BaseCharacter
