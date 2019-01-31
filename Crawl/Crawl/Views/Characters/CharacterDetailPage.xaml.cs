@@ -26,12 +26,12 @@ namespace Crawl.Views
         {
             InitializeComponent();
 
-            var data = new Character
-            {
-                Name = "Item 1",
-                Description = "This is an item description.",
-                Level = 1
-            };
+            var data = new Character();
+            //{
+            //    Name = "Character Name",
+            //    Description = "This is a character description.",
+            //    Age = 1
+            //};
 
             _viewModel = new CharacterDetailViewModel(data);
             BindingContext = _viewModel;
