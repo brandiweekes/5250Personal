@@ -20,7 +20,7 @@
         <ScrollView>
             <StackLayout Spacing="20" Padding="15">
 
-                <Label Text="Character Edit Page" FontSize="Small" />
+                <Label Text="Character Edit Page" FontSize="Medium" VerticalOptions="Start" />
 
                 <Image Source="{Binding Data.ImageURI}"
                 WidthRequest="75"
@@ -44,6 +44,7 @@
                         <Label 
                             Text="Name" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"/>
                     </StackLayout>
@@ -59,6 +60,7 @@
                         <Label 
                             Text="Description" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"/>
                     </StackLayout>
@@ -74,6 +76,7 @@
                         <Label 
                             Text="Age" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"/>
                     </StackLayout>
 
@@ -95,64 +98,11 @@
                             VerticalOptions="Center"/>
                     </StackLayout>
 
-                    <!--<StackLayout Grid.Row="3" Grid.Column="0">
-                        <Label 
-                            Text="Value"
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center">
-                        <Label 
-                            Text="{Binding Data.Value}" 
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"
-                            x:Name="ValueValue"
-                            VerticalOptions="Center"/>
-
-                        <Stepper Value="{Binding Data.Value, Mode=TwoWay}"
-                            Minimum="0"
-                            Maximum="20"
-                            Increment="1"
-                            ValueChanged="Value_OnStepperValueChanged"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
-                    </StackLayout>-->
-
-                    <!--<StackLayout Grid.Row="4" Grid.Column="0">
-                        <Label 
-                            Text="Location" 
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="4" Grid.Column="1">
-                        <Picker 
-                            ItemsSource="{x:Static local:ItemLocationList.GetListItem}" 
-                            SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                            x:Name="LocationPicker" 
-                            VerticalOptions="Center"/>
-                    </StackLayout>-->
-
-                    <!--<StackLayout Grid.Row="5" Grid.Column="0">
-                        <Label 
-                            Text="Attribute" 
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="5" Grid.Column="1">
-                        <Picker 
-                            ItemsSource="{x:Static local:AttributeList.GetListItem}" 
-                            SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                            x:Name="AttributePicker"
-                            VerticalOptions="Center"/>
-                    </StackLayout>-->
-
                     <StackLayout Grid.Row="6" Grid.Column="0">
                         <Label 
                             Text="Image" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"/>
                     </StackLayout>
@@ -168,31 +118,6 @@
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="Center"/>
                     </StackLayout>
-
-                    <!--<StackLayout Grid.Row="7" Grid.Column="0">
-                        <Label 
-                            Text="Damage" 
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"/>
-                    </StackLayout>
-
-                    <StackLayout Grid.Row="7" Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center">
-                        <Label 
-                            Text="{Binding Data.Damage}" 
-                            FontSize="Medium" 
-                            HorizontalOptions="Start"
-                            x:Name="DamageValue"
-                            VerticalOptions="Center"/>
-
-                        <Stepper 
-                            Value="{Binding Data.Damage, Mode=TwoWay}"
-                            Minimum="0"
-                            Maximum="20"
-                            Increment="1"
-                            ValueChanged="Damage_OnStepperValueChanged"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
-                    </StackLayout>-->
                 </Grid>
 
             </StackLayout>

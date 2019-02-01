@@ -11,14 +11,14 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="20" Padding="15">
+            <StackLayout Spacing="20" Padding="15" VerticalOptions="Start" >
 
-                <Label Text="Character Create Page" FontSize="Small" />
+                <Label Text="Character Create Page" FontSize="Medium" />
 
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
-                    VerticalOptions="Center">
+                    VerticalOptions="Start">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -31,8 +31,9 @@
                         <Label 
                             Text="Name" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"/>
+                            VerticalOptions="Start"/>
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="1">
                         <Entry 
@@ -45,7 +46,8 @@
                     <StackLayout Grid.Row="1" Grid.Column="0">
                         <Label 
                             Text="Description" 
-                            FontSize="Medium" 
+                            FontSize="Medium"
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"/>
                     </StackLayout>
@@ -61,6 +63,7 @@
                         <Label 
                             Text="Age" 
                             FontSize="Medium" 
+                            FontAttributes="Bold"
                             HorizontalOptions="Start"/>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center">

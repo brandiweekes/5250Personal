@@ -17,7 +17,7 @@
             Spacing="20"
             Padding="15">
 
-            <Label Text="Characters Delete Page" FontSize="Medium" />
+            <Label Text="Characters Delete Page" FontSize="Medium" VerticalOptions="Start"/>
 
             <Image Source="{Binding Data.ImageURI}"
                 WidthRequest="150"
@@ -30,6 +30,7 @@
                 HorizontalOptions="Start">
                 <Label Text="Name : " 
                    FontSize="Medium" 
+                   FontAttributes="Bold"
                    HorizontalOptions="Start"/>
                 <Label Text="{Binding Data.Name}" 
                     FontSize="Medium" 
@@ -41,6 +42,7 @@
                 HorizontalOptions="Start">
                 <Label Text="Description : " 
                    FontSize="Medium" 
+                   FontAttributes="Bold"
                    HorizontalOptions="Start"/>
                 <Label Text="{Binding Data.Description}" 
                     FontSize="Medium" 
@@ -52,6 +54,7 @@
                 HorizontalOptions="Start">
                 <Label Text="Age : " 
                    FontSize="Medium" 
+                   FontAttributes="Bold"
                    HorizontalOptions="Start"/>
                 <Label Text="{Binding Data.Age}" 
                     FontSize="Medium" 
