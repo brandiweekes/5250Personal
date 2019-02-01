@@ -67,7 +67,14 @@ namespace Crawl.Services
 
 
             // Load Characters
-            _characterDataset.Add(new Character());
+            _characterDataset.Add(new Character("Zorbet", "A bear like creature from unknown planet", 
+                "http://images.clipartpanda.com/monster-clipart-cute-monster-clip-art-1024x1024.png", 28));
+
+            _characterDataset.Add(new Character("Squashee", "A slug like species and are enemies of Zorbets",
+                "http://images.clipartpanda.com/orange-monster-clipart-orange-monster-hi.png", 35));
+
+            _characterDataset.Add(new Character("Triclops Family", "Unknown species able to manipulate time",
+                "http://images.clipartpanda.com/cute-halloween-monster-clipart-large_cute-monsters.png", 72));
 
             // Implement Monsters
 

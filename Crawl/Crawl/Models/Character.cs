@@ -16,8 +16,8 @@ namespace Crawl.Models
         {
             Attribute = new AttributeBase();
             Alive = true;
-            Age = 1;
-            ImageURI = "https://cdn3.iconfinder.com/data/icons/business-people-in-one-color/100/Corporate_Avatars_BW_19-01-512.png";
+            //Age = 10;
+            //ImageURI = "http://images.clipartpanda.com/monster-clipart-cute-monster-clip-art-1024x1024.png";
         }
 
         // Create a new character, based on a passed in BaseCharacter
@@ -78,6 +78,20 @@ namespace Crawl.Models
             RightFinger = newData.RightFinger;
             LeftFinger = newData.LeftFinger;
             Feet = newData.Feet;
+        }
+
+        // Constructor for Item called if needed to create a new item with set values.
+        public Character(string name, string description, string imageuri, int age)
+        {
+            Attribute = new AttributeBase();
+            Alive = true;
+
+            Name = name;
+            Description = description;
+            ImageURI = imageuri;
+
+            Age = age;
+            
         }
 
         // Upgrades to a set level

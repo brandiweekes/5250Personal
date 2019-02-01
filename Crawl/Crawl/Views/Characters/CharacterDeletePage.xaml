@@ -17,7 +17,7 @@
             Spacing="20"
             Padding="15">
 
-            <Label Text="Items Delete Page" FontSize="Medium" />
+            <Label Text="Characters Delete Page" FontSize="Medium" />
 
             <Image Source="{Binding Data.ImageURI}"
                 WidthRequest="150"
@@ -37,7 +37,7 @@
             </StackLayout>
 
             <StackLayout
-                Orientation="Horizontal"
+                Orientation="Vertical"
                 HorizontalOptions="Start">
                 <Label Text="Description : " 
                    FontSize="Medium" 
@@ -58,49 +58,7 @@
                     HorizontalOptions="Center"/>
             </StackLayout>
 
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="Start">
-                <Label Text="Damage : " 
-                   FontSize="Medium" 
-                   HorizontalOptions="Start"/>
-                <Label Text="{Binding Data.Damage}" 
-                    FontSize="Medium" 
-                    HorizontalOptions="Center"/>
-            </StackLayout>
-
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="Start">
-                <Label Text="Value : " 
-                   FontSize="Medium" 
-                   HorizontalOptions="Start"/>
-                <Label Text="{Binding Data.Value}" 
-                    FontSize="Medium" 
-                    HorizontalOptions="Center"/>
-            </StackLayout>
-
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="Start">
-                <Label Text="Location : " 
-                   FontSize="Medium" 
-                   HorizontalOptions="Start"/>
-                <Label Text="{Binding Data.Location}" 
-                    FontSize="Medium" 
-                    HorizontalOptions="Center"/>
-            </StackLayout>
-
-            <StackLayout 
-                Orientation="Horizontal" 
-                HorizontalOptions="Start">
-                <Label Text="Attribute : " 
-                   FontSize="Medium" 
-                   HorizontalOptions="Start"/>
-                <Label Text="{Binding Data.Attribute}" 
-                   FontSize="Medium" 
-                   HorizontalOptions="Center"/>
-            </StackLayout>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

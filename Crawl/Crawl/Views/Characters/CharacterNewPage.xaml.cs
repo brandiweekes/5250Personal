@@ -18,8 +18,9 @@ namespace Crawl.Views
 
             Data = new Character
             {
-                Name = "Character Name",
-                Description = "This is a Character description.",
+                ImageURI = "http://images.clipartpanda.com/sci-fi-clipart-alien3.png",
+                Name = "Doug",
+                Description = "Insect like beetle species able to telepathically control humans",
                 Age = 20,
                 Id = Guid.NewGuid().ToString()
             };
