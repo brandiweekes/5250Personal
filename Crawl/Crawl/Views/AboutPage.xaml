@@ -12,18 +12,18 @@
 
     <ScrollView>
         <StackLayout
-        VerticalOptions="StartAndExpand"
-        HorizontalOptions="CenterAndExpand" 
+        VerticalOptions="Start"
+        HorizontalOptions="Center" 
         Orientation="Vertical">
 
             <StackLayout 
-                VerticalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand" 
                 Orientation="Vertical">
 
                 <StackLayout 
             HorizontalOptions="CenterAndExpand" 
-            VerticalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand"
             Orientation="Vertical">
 
                     <Image 
@@ -46,7 +46,7 @@
 
                     <Label 
                 FontSize="Small"
-                Text="Week 2"
+                Text="Week 4"
                 VerticalOptions="Center" 
                 HorizontalOptions="CenterAndExpand" />
 
@@ -63,7 +63,7 @@
 
                 <StackLayout
                     Margin="0,50,0,0"
-        VerticalOptions="StartAndExpand"
+        VerticalOptions="CenterAndExpand"
         HorizontalOptions="CenterAndExpand" 
         Orientation="Vertical">
                     
