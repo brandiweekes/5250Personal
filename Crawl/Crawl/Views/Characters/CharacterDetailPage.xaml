@@ -18,23 +18,26 @@
             Spacing="20"
             Padding="15">
 
-            <Label Text="Characters Detail Page" FontSize="Medium" />
+            <Label Text="Characters Detail Page" FontSize="Medium" VerticalOptions="Start"/>
 
             <Image Source="{Binding Data.ImageURI}"
                 WidthRequest="150"
                 HeightRequest="150" 
                 HorizontalOptions="Center"
-                VerticalOptions="Center"/>
+                VerticalOptions="Start"/>
 
             <StackLayout
                 Orientation="Horizontal"
                 HorizontalOptions="Center">
                 <Label Text="Name : " 
                    FontSize="Medium" 
-                   HorizontalOptions="Start"/>
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"/>
                 <Label Text="{Binding Data.Name}" 
                     FontSize="Medium" 
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    VerticalOptions="StartAndExpand"/>
             </StackLayout>
 
             <StackLayout
@@ -42,10 +45,13 @@
                 HorizontalOptions="Start">
                 <Label Text="Description : " 
                    FontSize="Medium" 
-                   HorizontalOptions="Start"/>
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="StartAndExpand"/>
                 <Label Text="{Binding Data.Description}" 
                     FontSize="Medium" 
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="StartAndExpand"/>
             </StackLayout>
 
             <StackLayout
@@ -53,6 +59,7 @@
                 HorizontalOptions="Start">
                 <Label Text="Age : " 
                    FontSize="Medium" 
+                   FontAttributes="Bold"
                    HorizontalOptions="Start"/>
                 <Label Text="{Binding Data.Age}" 
                     FontSize="Medium" 
