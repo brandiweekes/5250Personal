@@ -20,7 +20,7 @@ namespace Crawl.Views
             {
                 Name = "Character Name",
                 Description = "This is a Character description.",
-                Level =1,
+                Age = 20,
                 Id = Guid.NewGuid().ToString()
             };
 
@@ -36,6 +36,12 @@ namespace Crawl.Views
         private async void Cancel_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        // The stepper function for Age
+        void Age_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            AgeValue.Text = String.Format("{0}", e.NewValue);
         }
     }
 }

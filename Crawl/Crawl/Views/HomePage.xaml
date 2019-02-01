@@ -27,26 +27,6 @@
                 <Label Text="Intergalactic Battle Begins!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
-                <Button Text="Aliens"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                    Clicked="CharactersButton_Command"/>
-
-                <Button Text="Agents"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                    Clicked="MonstersButton_Command"/>
-
-                <Button Text="Items"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                    Clicked="ItemsButton_Command"/>
-                
-                <Button Text="History"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                    Clicked="ScoresButton_Command"/>
             </StackLayout>
         </StackLayout>
         </ScrollView>

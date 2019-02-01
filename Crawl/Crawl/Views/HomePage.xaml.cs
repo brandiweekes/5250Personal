@@ -16,25 +16,5 @@ namespace Crawl.Views
 		{
 			InitializeComponent ();
 		}
-
-        private async void CharactersButton_Command(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new CharactersPage());
-        }
-
-        private async void MonstersButton_Command(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MonstersPage());
-        }
-
-        private async void ItemsButton_Command(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemsPage());
-        }
-
-        private async void ScoresButton_Command(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ScoresPage());
-        }
     }
 }

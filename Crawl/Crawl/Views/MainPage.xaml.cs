@@ -35,6 +35,9 @@ namespace Crawl.Views
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
+                    case (int)MenuItemType.Characters:
+                        MenuPages.Add(id, new NavigationPage(new CharactersPage()));
+                        break;
                 }
             }
 
